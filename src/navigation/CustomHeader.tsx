@@ -15,19 +15,23 @@ import {
 import { colors } from '../utility/colors';
 import Icon from '../utility/icon';
 import { fp } from '../utility/dimensions';
+import { useNavigation } from '@react-navigation/native';
 
 interface CustomHeaderProps {
-  onNotificationPress: () => void;
   onProfilePress: () => void;
-  onAddPress: () => void;
 }
 
 const CustomHeader: React.FC<CustomHeaderProps> = ({
-  onNotificationPress,
   onProfilePress,
-  onAddPress,
 }) => {
 
+  const navigation = useNavigation()
+  const onNotificationPress =()=>{
+    navigation.navigate("Notification")
+  }
+const onAddPress =()=>{
+  navigation.navigate("WalletScreen")
+}
   return (
     <>
       <StatusBar
@@ -51,7 +55,7 @@ const CustomHeader: React.FC<CustomHeaderProps> = ({
         <View style={styles.leftContainer}>
           <View style={styles.iconContainer}>
             <TouchableOpacity
-              onPress={onProfilePress}
+              onPress={onNotificationPress}
               style={styles.container2}>
           <Icon
               type={'MaterialIcons'}

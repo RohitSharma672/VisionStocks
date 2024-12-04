@@ -89,8 +89,8 @@ const HomeScreen = () => {
 
   return (
 
-    <>    <View style={styles.container}>
-      {/* Category Scrollable Bar */}
+    <>   
+     <View style={styles.container}>
       <ScrollView 
         horizontal 
         showsHorizontalScrollIndicator={true}
@@ -114,30 +114,6 @@ const HomeScreen = () => {
           </TouchableOpacity>
         ))}
       </ScrollView>
-
-
-
-      {/* <ScrollView style={styles.stocksList}>
-        {STOCK_DATA[selectedCategory].map((stock, index) => (
-          <Card key={index} style={styles.stockCard}>
-            <View style={styles.stockContent}>
-              <View style={styles.stockInfo}>
-                <Text style={styles.stockSymbol}>{stock.symbol}</Text>
-                <Text style={styles.stockName}>{stock.name}</Text>
-              </View>
-              <View style={styles.stockPriceInfo}>
-                <Text style={styles.stockPrice}>{stock.price}</Text>
-                <Text style={[
-                  styles.stockChange, 
-                  { color: stock.changeColor }
-                ]}>
-                  {stock.change}
-                </Text>
-              </View>
-            </View>
-          </Card>
-        ))}
-      </ScrollView> */}
     </View>
      {selectedCategory === "Stocks" && <NiftyStocksScreen/> }
 

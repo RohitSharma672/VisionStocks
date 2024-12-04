@@ -16,6 +16,9 @@ import Setting from '../screens/Afterlogin/Setting';
 import History from '../screens/Afterlogin/History';
 import BetDetailScreen from '../screens/ComponnetScreen/BetDetailScreen';
 import FavoriteStocksScreen from '../screens/ComponnetScreen/FavoriteStocksScreen';
+import WalletScreen from '../screens/ComponnetScreen/Wallet';
+import TransactionsScreen from '../screens/ComponnetScreen/Transaction';
+import NotificationsScreen from '../screens/ComponnetScreen/Notification';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -137,14 +140,12 @@ export default function MainNavigator() {
           return (
             <CustomHeader
               userName={"user"}
-              onNotificationPress={() => {
-              }}
+              
               onProfilePress={() => {
                 navigation.openDrawer();
 
               }}
-              onAddPress={() => {
-              }}
+           
             />
           );
         },
@@ -152,6 +153,10 @@ export default function MainNavigator() {
        />
       <Stack.Screen name="NewsWebView" component={NewsWebViewScreen} />
       <Stack.Screen name="BetDetailScreen" component={BetDetailScreen} />
+      <Stack.Screen name="WalletScreen" component={WalletScreen} />
+      <Stack.Screen name="ViewTransaction" component={TransactionsScreen} />
+      <Stack.Screen name="Notification" component={NotificationsScreen} />
+
 
 
     </Stack.Navigator>

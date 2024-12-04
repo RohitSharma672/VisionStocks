@@ -1,0 +1,4233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StockBettingHistoryScreen renders MyComponent correctly and matches snapshot 1`] = `
+<RCTSafeAreaView
+  style={
+    {
+      "backgroundColor": "#F5F5F5",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 7.5,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "fontSize": 33.65552620959067,
+          "fontWeight": "600",
+          "left": 18.75,
+        }
+      }
+    >
+      Betting History
+    </Text>
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {},
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#007AFF",
+                "fontSize": 18,
+                "margin": 8,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Click Me
+        </Text>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      style={
+        {
+          "backgroundColor": "transparent",
+          "borderRadius": 20,
+          "height": 40,
+          "margin": 6,
+          "shadowColor": "#000",
+          "shadowOffset": {
+            "height": 0,
+            "width": 0,
+          },
+          "shadowOpacity": 0,
+          "shadowRadius": 0,
+          "width": 40,
+        }
+      }
+      testID="icon-button-container-outer-layer"
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "backgroundColor": "transparent",
+            "borderColor": "rgba(121, 116, 126, 1)",
+            "borderRadius": 20,
+            "borderWidth": 0,
+            "elevation": 0,
+            "flex": 1,
+            "overflow": "hidden",
+            "shadowColor": "#000",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0,
+            "shadowRadius": 0,
+          }
+        }
+        testID="icon-button-container"
+      >
+        <View
+          accessibilityComponentType="button"
+          accessibilityRole="button"
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityTraits="button"
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          centered={true}
+          collapsable={false}
+          focusable={true}
+          hitSlop={
+            {
+              "bottom": 6,
+              "left": 6,
+              "right": 6,
+              "top": 6,
+            }
+          }
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "overflow": "hidden",
+              },
+              [
+                {
+                  "alignItems": "center",
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                },
+                {
+                  "borderRadius": 20,
+                },
+              ],
+            ]
+          }
+          testID="icon-button"
+        >
+          <Text
+            accessibilityElementsHidden={true}
+            importantForAccessibility="no-hide-descendants"
+            pointerEvents="none"
+            selectable={false}
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                },
+                {
+                  "color": "rgba(73, 69, 79, 1)",
+                  "fontSize": 24,
+                },
+              ]
+            }
+          >
+            □
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <RCTScrollView
+    ListEmptyComponent={
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "marginTop": 266.8,
+          }
+        }
+      >
+        <ActivityIndicator
+          animating={true}
+        />
+        <Text
+          style={
+            {
+              "fontSize": 30.595932917809698,
+              "marginTop": 26.68,
+            }
+          }
+        >
+          No betting history found
+        </Text>
+      </View>
+    }
+    contentContainerStyle={
+      {
+        "padding": 30,
+      }
+    }
+    data={
+      [
+        {
+          "actualMovement": 4,
+          "betAmount": 1200,
+          "betTimestamp": "2024-02-15 14:30:45",
+          "currentStockPrice": 2350,
+          "id": "1",
+          "netProfit": 2300,
+          "points": 75,
+          "selectedRange": {
+            "max": 4,
+            "min": -3,
+          },
+          "status": "win",
+          "stockName": "Reliance Industries",
+          "symbol": "RELIANCE",
+          "targetPriceRange": {
+            "lower": 2278,
+            "upper": 2468,
+          },
+        },
+        {
+          "actualMovement": -3,
+          "betAmount": 800,
+          "betTimestamp": "2024-02-14 11:15:22",
+          "currentStockPrice": 1525,
+          "id": "2",
+          "netProfit": -800,
+          "points": -40,
+          "selectedRange": {
+            "max": 4,
+            "min": -2,
+          },
+          "status": "loss",
+          "stockName": "HDFC Bank",
+          "symbol": "HDFCBANK",
+          "targetPriceRange": {
+            "lower": 1495,
+            "upper": 1586,
+          },
+        },
+        {
+          "actualMovement": 4,
+          "betAmount": 1200,
+          "betTimestamp": "2024-02-15 14:30:45",
+          "currentStockPrice": 2350,
+          "id": "1",
+          "netProfit": 2400,
+          "points": 75,
+          "selectedRange": {
+            "max": 5,
+            "min": -3,
+          },
+          "status": "pending",
+          "stockName": "Reliance Industries",
+          "symbol": "RELIANCE",
+          "targetPriceRange": {
+            "lower": 2278,
+            "upper": 2468,
+          },
+        },
+        {
+          "actualMovement": -3,
+          "betAmount": 800,
+          "betTimestamp": "2024-02-14 11:15:22",
+          "currentStockPrice": 1525,
+          "id": "2",
+          "netProfit": -800,
+          "points": -40,
+          "selectedRange": {
+            "max": 4,
+            "min": -2,
+          },
+          "status": "loss",
+          "stockName": "HDFC Bank",
+          "symbol": "HDFCBANK",
+          "targetPriceRange": {
+            "lower": 1495,
+            "upper": 1586,
+          },
+        },
+        {
+          "actualMovement": 4,
+          "betAmount": 1200,
+          "betTimestamp": "2024-02-15 14:30:45",
+          "currentStockPrice": 2350,
+          "id": "1",
+          "netProfit": 2400,
+          "points": 75,
+          "selectedRange": {
+            "max": 5,
+            "min": -3,
+          },
+          "status": "win",
+          "stockName": "Reliance Industries",
+          "symbol": "RELIANCE",
+          "targetPriceRange": {
+            "lower": 2278,
+            "upper": 2468,
+          },
+        },
+        {
+          "actualMovement": -3,
+          "betAmount": 800,
+          "betTimestamp": "2024-02-14 11:15:22",
+          "currentStockPrice": 1525,
+          "id": "2",
+          "netProfit": -800,
+          "points": -40,
+          "selectedRange": {
+            "max": 4,
+            "min": -2,
+          },
+          "status": "pending",
+          "stockName": "HDFC Bank",
+          "symbol": "HDFCBANK",
+          "targetPriceRange": {
+            "lower": 1495,
+            "upper": 1586,
+          },
+        },
+        {
+          "actualMovement": -3,
+          "betAmount": 800,
+          "betTimestamp": "2024-02-14 11:15:22",
+          "currentStockPrice": 1525,
+          "id": "2",
+          "netProfit": -800,
+          "points": -40,
+          "selectedRange": {
+            "max": 4,
+            "min": -2,
+          },
+          "status": "loss",
+          "stockName": "HDFC Bank",
+          "symbol": "HDFCBANK",
+          "targetPriceRange": {
+            "lower": 1495,
+            "upper": 1586,
+          },
+        },
+        {
+          "actualMovement": 4,
+          "betAmount": 1200,
+          "betTimestamp": "2024-02-15 14:30:45",
+          "currentStockPrice": 2350,
+          "id": "1",
+          "netProfit": 2400,
+          "points": 75,
+          "selectedRange": {
+            "max": 5,
+            "min": -3,
+          },
+          "status": "win",
+          "stockName": "Reliance Industries",
+          "symbol": "RELIANCE",
+          "targetPriceRange": {
+            "lower": 2278,
+            "upper": 2468,
+          },
+        },
+        {
+          "actualMovement": -3,
+          "betAmount": 800,
+          "betTimestamp": "2024-02-14 11:15:22",
+          "currentStockPrice": 1525,
+          "id": "2",
+          "netProfit": -800,
+          "points": -40,
+          "selectedRange": {
+            "max": 4,
+            "min": -2,
+          },
+          "status": "loss",
+          "stockName": "HDFC Bank",
+          "symbol": "HDFCBANK",
+          "targetPriceRange": {
+            "lower": 1495,
+            "upper": 1586,
+          },
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={0.0001}
+    stickyHeaderIndices={[]}
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "rgb(255, 251, 255)",
+              "borderRadius": 12,
+              "marginBottom": 26.68,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.15,
+              "shadowRadius": 3,
+            }
+          }
+          testID="card-container-outer-layer"
+        >
+          <View
+            collapsable={false}
+            style={
+              {
+                "backgroundColor": "rgb(255, 251, 255)",
+                "borderRadius": 12,
+                "elevation": 3,
+                "flex": undefined,
+                "shadowColor": "#000",
+                "shadowOffset": {
+                  "height": 1,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 1,
+              }
+            }
+            testID="card-container"
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexShrink": 1,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="card"
+              >
+                <View
+                  borderRadiusStyles={{}}
+                  index={0}
+                  siblings={
+                    [
+                      "View",
+                    ]
+                  }
+                  style={
+                    {
+                      "padding": 15,
+                    }
+                  }
+                  total={1}
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginBottom": 20.009999999999998,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "fontSize": 33.65552620959067,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      Reliance Industries
+                    </Text>
+                    <View
+                      collapsable={false}
+                      style={
+                        {
+                          "backgroundColor": "green",
+                          "borderRadius": 8,
+                          "shadowColor": "#000",
+                          "shadowOffset": {
+                            "height": 0,
+                            "width": 0,
+                          },
+                          "shadowOpacity": 0,
+                          "shadowRadius": 0,
+                        }
+                      }
+                      testID="chip-container-outer-layer"
+                    >
+                      <View
+                        collapsable={false}
+                        style={
+                          {
+                            "backgroundColor": "green",
+                            "borderColor": "rgba(121, 116, 126, 1)",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flex": undefined,
+                            "flexDirection": "column",
+                            "shadowColor": "#000",
+                            "shadowOffset": {
+                              "height": 0,
+                              "width": 0,
+                            },
+                            "shadowOpacity": 0,
+                            "shadowRadius": 0,
+                          }
+                        }
+                        testID="chip-container"
+                      >
+                        <View
+                          accessibilityRole="button"
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": true,
+                              "expanded": undefined,
+                              "selected": false,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={true}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          style={
+                            [
+                              {
+                                "overflow": "hidden",
+                              },
+                              [
+                                {
+                                  "borderRadius": 8,
+                                },
+                                {
+                                  "width": "100%",
+                                },
+                              ],
+                            ]
+                          }
+                          testID="chip"
+                        >
+                          <View
+                            style={
+                              [
+                                {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "paddingLeft": 4,
+                                  "position": "relative",
+                                },
+                                {
+                                  "paddingLeft": 0,
+                                },
+                                {
+                                  "paddingRight": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignSelf": "center",
+                                    "padding": 4,
+                                  },
+                                  {
+                                    "paddingLeft": 8,
+                                    "paddingRight": 0,
+                                  },
+                                  null,
+                                ]
+                              }
+                            >
+                              <Text
+                                accessibilityElementsHidden={true}
+                                importantForAccessibility="no-hide-descendants"
+                                pointerEvents="none"
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "backgroundColor": "transparent",
+                                    },
+                                    {
+                                      "color": "rgba(103, 80, 164, 1)",
+                                      "fontSize": 18,
+                                    },
+                                  ]
+                                }
+                              >
+                                □
+                              </Text>
+                            </View>
+                            <Text
+                              numberOfLines={1}
+                              selectable={false}
+                              style={
+                                [
+                                  {
+                                    "textAlign": "left",
+                                  },
+                                  {
+                                    "color": "rgba(28, 27, 31, 1)",
+                                    "writingDirection": "ltr",
+                                  },
+                                  [
+                                    {
+                                      "fontFamily": "System",
+                                      "fontSize": 14,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.1,
+                                      "lineHeight": 20,
+                                    },
+                                    [
+                                      {
+                                        "marginVertical": 6,
+                                        "textAlignVertical": "center",
+                                      },
+                                      {
+                                        "color": "rgba(29, 25, 43, 1)",
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      {
+                                        "marginLeft": 8,
+                                        "marginRight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ],
+                                ]
+                              }
+                            >
+                              WIN
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "marginTop": 13.34,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Stock Price at Bet:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        ₹
+                        2350.00
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Net Profit:
+                      </Text>
+                      <Text
+                        style={
+                          [
+                            {
+                              "fontSize": 30.595932917809698,
+                              "fontWeight": "500",
+                            },
+                            {
+                              "color": "#4CAF50",
+                            },
+                          ]
+                        }
+                      >
+                        ₹
+                        2,300
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Bet Time:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        2024-02-15 14:30:45
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "rgb(255, 251, 255)",
+              "borderRadius": 12,
+              "marginBottom": 26.68,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.15,
+              "shadowRadius": 3,
+            }
+          }
+          testID="card-container-outer-layer"
+        >
+          <View
+            collapsable={false}
+            style={
+              {
+                "backgroundColor": "rgb(255, 251, 255)",
+                "borderRadius": 12,
+                "elevation": 3,
+                "flex": undefined,
+                "shadowColor": "#000",
+                "shadowOffset": {
+                  "height": 1,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 1,
+              }
+            }
+            testID="card-container"
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexShrink": 1,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="card"
+              >
+                <View
+                  borderRadiusStyles={{}}
+                  index={0}
+                  siblings={
+                    [
+                      "View",
+                    ]
+                  }
+                  style={
+                    {
+                      "padding": 15,
+                    }
+                  }
+                  total={1}
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginBottom": 20.009999999999998,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "fontSize": 33.65552620959067,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      HDFC Bank
+                    </Text>
+                    <View
+                      collapsable={false}
+                      style={
+                        {
+                          "backgroundColor": "red",
+                          "borderRadius": 8,
+                          "shadowColor": "#000",
+                          "shadowOffset": {
+                            "height": 0,
+                            "width": 0,
+                          },
+                          "shadowOpacity": 0,
+                          "shadowRadius": 0,
+                        }
+                      }
+                      testID="chip-container-outer-layer"
+                    >
+                      <View
+                        collapsable={false}
+                        style={
+                          {
+                            "backgroundColor": "red",
+                            "borderColor": "rgba(121, 116, 126, 1)",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flex": undefined,
+                            "flexDirection": "column",
+                            "shadowColor": "#000",
+                            "shadowOffset": {
+                              "height": 0,
+                              "width": 0,
+                            },
+                            "shadowOpacity": 0,
+                            "shadowRadius": 0,
+                          }
+                        }
+                        testID="chip-container"
+                      >
+                        <View
+                          accessibilityRole="button"
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": true,
+                              "expanded": undefined,
+                              "selected": false,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={true}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          style={
+                            [
+                              {
+                                "overflow": "hidden",
+                              },
+                              [
+                                {
+                                  "borderRadius": 8,
+                                },
+                                {
+                                  "width": "100%",
+                                },
+                              ],
+                            ]
+                          }
+                          testID="chip"
+                        >
+                          <View
+                            style={
+                              [
+                                {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "paddingLeft": 4,
+                                  "position": "relative",
+                                },
+                                {
+                                  "paddingLeft": 0,
+                                },
+                                {
+                                  "paddingRight": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignSelf": "center",
+                                    "padding": 4,
+                                  },
+                                  {
+                                    "paddingLeft": 8,
+                                    "paddingRight": 0,
+                                  },
+                                  null,
+                                ]
+                              }
+                            >
+                              <Text
+                                accessibilityElementsHidden={true}
+                                importantForAccessibility="no-hide-descendants"
+                                pointerEvents="none"
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "backgroundColor": "transparent",
+                                    },
+                                    {
+                                      "color": "rgba(103, 80, 164, 1)",
+                                      "fontSize": 18,
+                                    },
+                                  ]
+                                }
+                              >
+                                □
+                              </Text>
+                            </View>
+                            <Text
+                              numberOfLines={1}
+                              selectable={false}
+                              style={
+                                [
+                                  {
+                                    "textAlign": "left",
+                                  },
+                                  {
+                                    "color": "rgba(28, 27, 31, 1)",
+                                    "writingDirection": "ltr",
+                                  },
+                                  [
+                                    {
+                                      "fontFamily": "System",
+                                      "fontSize": 14,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.1,
+                                      "lineHeight": 20,
+                                    },
+                                    [
+                                      {
+                                        "marginVertical": 6,
+                                        "textAlignVertical": "center",
+                                      },
+                                      {
+                                        "color": "rgba(29, 25, 43, 1)",
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      {
+                                        "marginLeft": 8,
+                                        "marginRight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ],
+                                ]
+                              }
+                            >
+                              LOSS
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "marginTop": 13.34,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Stock Price at Bet:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        ₹
+                        1525.00
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Net Profit:
+                      </Text>
+                      <Text
+                        style={
+                          [
+                            {
+                              "fontSize": 30.595932917809698,
+                              "fontWeight": "500",
+                            },
+                            {
+                              "color": "#F44336",
+                            },
+                          ]
+                        }
+                      >
+                        ₹
+                        800
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Bet Time:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        2024-02-14 11:15:22
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "rgb(255, 251, 255)",
+              "borderRadius": 12,
+              "marginBottom": 26.68,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.15,
+              "shadowRadius": 3,
+            }
+          }
+          testID="card-container-outer-layer"
+        >
+          <View
+            collapsable={false}
+            style={
+              {
+                "backgroundColor": "rgb(255, 251, 255)",
+                "borderRadius": 12,
+                "elevation": 3,
+                "flex": undefined,
+                "shadowColor": "#000",
+                "shadowOffset": {
+                  "height": 1,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 1,
+              }
+            }
+            testID="card-container"
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexShrink": 1,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="card"
+              >
+                <View
+                  borderRadiusStyles={{}}
+                  index={0}
+                  siblings={
+                    [
+                      "View",
+                    ]
+                  }
+                  style={
+                    {
+                      "padding": 15,
+                    }
+                  }
+                  total={1}
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginBottom": 20.009999999999998,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "fontSize": 33.65552620959067,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      Reliance Industries
+                    </Text>
+                    <View
+                      collapsable={false}
+                      style={
+                        {
+                          "backgroundColor": "orange",
+                          "borderRadius": 8,
+                          "shadowColor": "#000",
+                          "shadowOffset": {
+                            "height": 0,
+                            "width": 0,
+                          },
+                          "shadowOpacity": 0,
+                          "shadowRadius": 0,
+                        }
+                      }
+                      testID="chip-container-outer-layer"
+                    >
+                      <View
+                        collapsable={false}
+                        style={
+                          {
+                            "backgroundColor": "orange",
+                            "borderColor": "rgba(121, 116, 126, 1)",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flex": undefined,
+                            "flexDirection": "column",
+                            "shadowColor": "#000",
+                            "shadowOffset": {
+                              "height": 0,
+                              "width": 0,
+                            },
+                            "shadowOpacity": 0,
+                            "shadowRadius": 0,
+                          }
+                        }
+                        testID="chip-container"
+                      >
+                        <View
+                          accessibilityRole="button"
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": true,
+                              "expanded": undefined,
+                              "selected": false,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={true}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          style={
+                            [
+                              {
+                                "overflow": "hidden",
+                              },
+                              [
+                                {
+                                  "borderRadius": 8,
+                                },
+                                {
+                                  "width": "100%",
+                                },
+                              ],
+                            ]
+                          }
+                          testID="chip"
+                        >
+                          <View
+                            style={
+                              [
+                                {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "paddingLeft": 4,
+                                  "position": "relative",
+                                },
+                                {
+                                  "paddingLeft": 0,
+                                },
+                                {
+                                  "paddingRight": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignSelf": "center",
+                                    "padding": 4,
+                                  },
+                                  {
+                                    "paddingLeft": 8,
+                                    "paddingRight": 0,
+                                  },
+                                  null,
+                                ]
+                              }
+                            >
+                              <Text
+                                accessibilityElementsHidden={true}
+                                importantForAccessibility="no-hide-descendants"
+                                pointerEvents="none"
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "backgroundColor": "transparent",
+                                    },
+                                    {
+                                      "color": "rgba(103, 80, 164, 1)",
+                                      "fontSize": 18,
+                                    },
+                                  ]
+                                }
+                              >
+                                □
+                              </Text>
+                            </View>
+                            <Text
+                              numberOfLines={1}
+                              selectable={false}
+                              style={
+                                [
+                                  {
+                                    "textAlign": "left",
+                                  },
+                                  {
+                                    "color": "rgba(28, 27, 31, 1)",
+                                    "writingDirection": "ltr",
+                                  },
+                                  [
+                                    {
+                                      "fontFamily": "System",
+                                      "fontSize": 14,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.1,
+                                      "lineHeight": 20,
+                                    },
+                                    [
+                                      {
+                                        "marginVertical": 6,
+                                        "textAlignVertical": "center",
+                                      },
+                                      {
+                                        "color": "rgba(29, 25, 43, 1)",
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      {
+                                        "marginLeft": 8,
+                                        "marginRight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ],
+                                ]
+                              }
+                            >
+                              PENDING
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "marginTop": 13.34,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Stock Price at Bet:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        ₹
+                        2350.00
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Net Profit:
+                      </Text>
+                      <Text
+                        style={
+                          [
+                            {
+                              "fontSize": 30.595932917809698,
+                              "fontWeight": "500",
+                            },
+                            {
+                              "color": "#4CAF50",
+                            },
+                          ]
+                        }
+                      >
+                        ₹
+                        2,400
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Bet Time:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        2024-02-15 14:30:45
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "rgb(255, 251, 255)",
+              "borderRadius": 12,
+              "marginBottom": 26.68,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.15,
+              "shadowRadius": 3,
+            }
+          }
+          testID="card-container-outer-layer"
+        >
+          <View
+            collapsable={false}
+            style={
+              {
+                "backgroundColor": "rgb(255, 251, 255)",
+                "borderRadius": 12,
+                "elevation": 3,
+                "flex": undefined,
+                "shadowColor": "#000",
+                "shadowOffset": {
+                  "height": 1,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 1,
+              }
+            }
+            testID="card-container"
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexShrink": 1,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="card"
+              >
+                <View
+                  borderRadiusStyles={{}}
+                  index={0}
+                  siblings={
+                    [
+                      "View",
+                    ]
+                  }
+                  style={
+                    {
+                      "padding": 15,
+                    }
+                  }
+                  total={1}
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginBottom": 20.009999999999998,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "fontSize": 33.65552620959067,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      HDFC Bank
+                    </Text>
+                    <View
+                      collapsable={false}
+                      style={
+                        {
+                          "backgroundColor": "red",
+                          "borderRadius": 8,
+                          "shadowColor": "#000",
+                          "shadowOffset": {
+                            "height": 0,
+                            "width": 0,
+                          },
+                          "shadowOpacity": 0,
+                          "shadowRadius": 0,
+                        }
+                      }
+                      testID="chip-container-outer-layer"
+                    >
+                      <View
+                        collapsable={false}
+                        style={
+                          {
+                            "backgroundColor": "red",
+                            "borderColor": "rgba(121, 116, 126, 1)",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flex": undefined,
+                            "flexDirection": "column",
+                            "shadowColor": "#000",
+                            "shadowOffset": {
+                              "height": 0,
+                              "width": 0,
+                            },
+                            "shadowOpacity": 0,
+                            "shadowRadius": 0,
+                          }
+                        }
+                        testID="chip-container"
+                      >
+                        <View
+                          accessibilityRole="button"
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": true,
+                              "expanded": undefined,
+                              "selected": false,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={true}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          style={
+                            [
+                              {
+                                "overflow": "hidden",
+                              },
+                              [
+                                {
+                                  "borderRadius": 8,
+                                },
+                                {
+                                  "width": "100%",
+                                },
+                              ],
+                            ]
+                          }
+                          testID="chip"
+                        >
+                          <View
+                            style={
+                              [
+                                {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "paddingLeft": 4,
+                                  "position": "relative",
+                                },
+                                {
+                                  "paddingLeft": 0,
+                                },
+                                {
+                                  "paddingRight": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignSelf": "center",
+                                    "padding": 4,
+                                  },
+                                  {
+                                    "paddingLeft": 8,
+                                    "paddingRight": 0,
+                                  },
+                                  null,
+                                ]
+                              }
+                            >
+                              <Text
+                                accessibilityElementsHidden={true}
+                                importantForAccessibility="no-hide-descendants"
+                                pointerEvents="none"
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "backgroundColor": "transparent",
+                                    },
+                                    {
+                                      "color": "rgba(103, 80, 164, 1)",
+                                      "fontSize": 18,
+                                    },
+                                  ]
+                                }
+                              >
+                                □
+                              </Text>
+                            </View>
+                            <Text
+                              numberOfLines={1}
+                              selectable={false}
+                              style={
+                                [
+                                  {
+                                    "textAlign": "left",
+                                  },
+                                  {
+                                    "color": "rgba(28, 27, 31, 1)",
+                                    "writingDirection": "ltr",
+                                  },
+                                  [
+                                    {
+                                      "fontFamily": "System",
+                                      "fontSize": 14,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.1,
+                                      "lineHeight": 20,
+                                    },
+                                    [
+                                      {
+                                        "marginVertical": 6,
+                                        "textAlignVertical": "center",
+                                      },
+                                      {
+                                        "color": "rgba(29, 25, 43, 1)",
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      {
+                                        "marginLeft": 8,
+                                        "marginRight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ],
+                                ]
+                              }
+                            >
+                              LOSS
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "marginTop": 13.34,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Stock Price at Bet:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        ₹
+                        1525.00
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Net Profit:
+                      </Text>
+                      <Text
+                        style={
+                          [
+                            {
+                              "fontSize": 30.595932917809698,
+                              "fontWeight": "500",
+                            },
+                            {
+                              "color": "#F44336",
+                            },
+                          ]
+                        }
+                      >
+                        ₹
+                        800
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Bet Time:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        2024-02-14 11:15:22
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "rgb(255, 251, 255)",
+              "borderRadius": 12,
+              "marginBottom": 26.68,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.15,
+              "shadowRadius": 3,
+            }
+          }
+          testID="card-container-outer-layer"
+        >
+          <View
+            collapsable={false}
+            style={
+              {
+                "backgroundColor": "rgb(255, 251, 255)",
+                "borderRadius": 12,
+                "elevation": 3,
+                "flex": undefined,
+                "shadowColor": "#000",
+                "shadowOffset": {
+                  "height": 1,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 1,
+              }
+            }
+            testID="card-container"
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexShrink": 1,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="card"
+              >
+                <View
+                  borderRadiusStyles={{}}
+                  index={0}
+                  siblings={
+                    [
+                      "View",
+                    ]
+                  }
+                  style={
+                    {
+                      "padding": 15,
+                    }
+                  }
+                  total={1}
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginBottom": 20.009999999999998,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "fontSize": 33.65552620959067,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      Reliance Industries
+                    </Text>
+                    <View
+                      collapsable={false}
+                      style={
+                        {
+                          "backgroundColor": "green",
+                          "borderRadius": 8,
+                          "shadowColor": "#000",
+                          "shadowOffset": {
+                            "height": 0,
+                            "width": 0,
+                          },
+                          "shadowOpacity": 0,
+                          "shadowRadius": 0,
+                        }
+                      }
+                      testID="chip-container-outer-layer"
+                    >
+                      <View
+                        collapsable={false}
+                        style={
+                          {
+                            "backgroundColor": "green",
+                            "borderColor": "rgba(121, 116, 126, 1)",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flex": undefined,
+                            "flexDirection": "column",
+                            "shadowColor": "#000",
+                            "shadowOffset": {
+                              "height": 0,
+                              "width": 0,
+                            },
+                            "shadowOpacity": 0,
+                            "shadowRadius": 0,
+                          }
+                        }
+                        testID="chip-container"
+                      >
+                        <View
+                          accessibilityRole="button"
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": true,
+                              "expanded": undefined,
+                              "selected": false,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={true}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          style={
+                            [
+                              {
+                                "overflow": "hidden",
+                              },
+                              [
+                                {
+                                  "borderRadius": 8,
+                                },
+                                {
+                                  "width": "100%",
+                                },
+                              ],
+                            ]
+                          }
+                          testID="chip"
+                        >
+                          <View
+                            style={
+                              [
+                                {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "paddingLeft": 4,
+                                  "position": "relative",
+                                },
+                                {
+                                  "paddingLeft": 0,
+                                },
+                                {
+                                  "paddingRight": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignSelf": "center",
+                                    "padding": 4,
+                                  },
+                                  {
+                                    "paddingLeft": 8,
+                                    "paddingRight": 0,
+                                  },
+                                  null,
+                                ]
+                              }
+                            >
+                              <Text
+                                accessibilityElementsHidden={true}
+                                importantForAccessibility="no-hide-descendants"
+                                pointerEvents="none"
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "backgroundColor": "transparent",
+                                    },
+                                    {
+                                      "color": "rgba(103, 80, 164, 1)",
+                                      "fontSize": 18,
+                                    },
+                                  ]
+                                }
+                              >
+                                □
+                              </Text>
+                            </View>
+                            <Text
+                              numberOfLines={1}
+                              selectable={false}
+                              style={
+                                [
+                                  {
+                                    "textAlign": "left",
+                                  },
+                                  {
+                                    "color": "rgba(28, 27, 31, 1)",
+                                    "writingDirection": "ltr",
+                                  },
+                                  [
+                                    {
+                                      "fontFamily": "System",
+                                      "fontSize": 14,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.1,
+                                      "lineHeight": 20,
+                                    },
+                                    [
+                                      {
+                                        "marginVertical": 6,
+                                        "textAlignVertical": "center",
+                                      },
+                                      {
+                                        "color": "rgba(29, 25, 43, 1)",
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      {
+                                        "marginLeft": 8,
+                                        "marginRight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ],
+                                ]
+                              }
+                            >
+                              WIN
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "marginTop": 13.34,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Stock Price at Bet:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        ₹
+                        2350.00
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Net Profit:
+                      </Text>
+                      <Text
+                        style={
+                          [
+                            {
+                              "fontSize": 30.595932917809698,
+                              "fontWeight": "500",
+                            },
+                            {
+                              "color": "#4CAF50",
+                            },
+                          ]
+                        }
+                      >
+                        ₹
+                        2,400
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Bet Time:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        2024-02-15 14:30:45
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "rgb(255, 251, 255)",
+              "borderRadius": 12,
+              "marginBottom": 26.68,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.15,
+              "shadowRadius": 3,
+            }
+          }
+          testID="card-container-outer-layer"
+        >
+          <View
+            collapsable={false}
+            style={
+              {
+                "backgroundColor": "rgb(255, 251, 255)",
+                "borderRadius": 12,
+                "elevation": 3,
+                "flex": undefined,
+                "shadowColor": "#000",
+                "shadowOffset": {
+                  "height": 1,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 1,
+              }
+            }
+            testID="card-container"
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexShrink": 1,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="card"
+              >
+                <View
+                  borderRadiusStyles={{}}
+                  index={0}
+                  siblings={
+                    [
+                      "View",
+                    ]
+                  }
+                  style={
+                    {
+                      "padding": 15,
+                    }
+                  }
+                  total={1}
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginBottom": 20.009999999999998,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "fontSize": 33.65552620959067,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      HDFC Bank
+                    </Text>
+                    <View
+                      collapsable={false}
+                      style={
+                        {
+                          "backgroundColor": "orange",
+                          "borderRadius": 8,
+                          "shadowColor": "#000",
+                          "shadowOffset": {
+                            "height": 0,
+                            "width": 0,
+                          },
+                          "shadowOpacity": 0,
+                          "shadowRadius": 0,
+                        }
+                      }
+                      testID="chip-container-outer-layer"
+                    >
+                      <View
+                        collapsable={false}
+                        style={
+                          {
+                            "backgroundColor": "orange",
+                            "borderColor": "rgba(121, 116, 126, 1)",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flex": undefined,
+                            "flexDirection": "column",
+                            "shadowColor": "#000",
+                            "shadowOffset": {
+                              "height": 0,
+                              "width": 0,
+                            },
+                            "shadowOpacity": 0,
+                            "shadowRadius": 0,
+                          }
+                        }
+                        testID="chip-container"
+                      >
+                        <View
+                          accessibilityRole="button"
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": true,
+                              "expanded": undefined,
+                              "selected": false,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={true}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          style={
+                            [
+                              {
+                                "overflow": "hidden",
+                              },
+                              [
+                                {
+                                  "borderRadius": 8,
+                                },
+                                {
+                                  "width": "100%",
+                                },
+                              ],
+                            ]
+                          }
+                          testID="chip"
+                        >
+                          <View
+                            style={
+                              [
+                                {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "paddingLeft": 4,
+                                  "position": "relative",
+                                },
+                                {
+                                  "paddingLeft": 0,
+                                },
+                                {
+                                  "paddingRight": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignSelf": "center",
+                                    "padding": 4,
+                                  },
+                                  {
+                                    "paddingLeft": 8,
+                                    "paddingRight": 0,
+                                  },
+                                  null,
+                                ]
+                              }
+                            >
+                              <Text
+                                accessibilityElementsHidden={true}
+                                importantForAccessibility="no-hide-descendants"
+                                pointerEvents="none"
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "backgroundColor": "transparent",
+                                    },
+                                    {
+                                      "color": "rgba(103, 80, 164, 1)",
+                                      "fontSize": 18,
+                                    },
+                                  ]
+                                }
+                              >
+                                □
+                              </Text>
+                            </View>
+                            <Text
+                              numberOfLines={1}
+                              selectable={false}
+                              style={
+                                [
+                                  {
+                                    "textAlign": "left",
+                                  },
+                                  {
+                                    "color": "rgba(28, 27, 31, 1)",
+                                    "writingDirection": "ltr",
+                                  },
+                                  [
+                                    {
+                                      "fontFamily": "System",
+                                      "fontSize": 14,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.1,
+                                      "lineHeight": 20,
+                                    },
+                                    [
+                                      {
+                                        "marginVertical": 6,
+                                        "textAlignVertical": "center",
+                                      },
+                                      {
+                                        "color": "rgba(29, 25, 43, 1)",
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      {
+                                        "marginLeft": 8,
+                                        "marginRight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ],
+                                ]
+                              }
+                            >
+                              PENDING
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "marginTop": 13.34,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Stock Price at Bet:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        ₹
+                        1525.00
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Net Profit:
+                      </Text>
+                      <Text
+                        style={
+                          [
+                            {
+                              "fontSize": 30.595932917809698,
+                              "fontWeight": "500",
+                            },
+                            {
+                              "color": "#F44336",
+                            },
+                          ]
+                        }
+                      >
+                        ₹
+                        800
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Bet Time:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        2024-02-14 11:15:22
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "rgb(255, 251, 255)",
+              "borderRadius": 12,
+              "marginBottom": 26.68,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.15,
+              "shadowRadius": 3,
+            }
+          }
+          testID="card-container-outer-layer"
+        >
+          <View
+            collapsable={false}
+            style={
+              {
+                "backgroundColor": "rgb(255, 251, 255)",
+                "borderRadius": 12,
+                "elevation": 3,
+                "flex": undefined,
+                "shadowColor": "#000",
+                "shadowOffset": {
+                  "height": 1,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 1,
+              }
+            }
+            testID="card-container"
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexShrink": 1,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="card"
+              >
+                <View
+                  borderRadiusStyles={{}}
+                  index={0}
+                  siblings={
+                    [
+                      "View",
+                    ]
+                  }
+                  style={
+                    {
+                      "padding": 15,
+                    }
+                  }
+                  total={1}
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginBottom": 20.009999999999998,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "fontSize": 33.65552620959067,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      HDFC Bank
+                    </Text>
+                    <View
+                      collapsable={false}
+                      style={
+                        {
+                          "backgroundColor": "red",
+                          "borderRadius": 8,
+                          "shadowColor": "#000",
+                          "shadowOffset": {
+                            "height": 0,
+                            "width": 0,
+                          },
+                          "shadowOpacity": 0,
+                          "shadowRadius": 0,
+                        }
+                      }
+                      testID="chip-container-outer-layer"
+                    >
+                      <View
+                        collapsable={false}
+                        style={
+                          {
+                            "backgroundColor": "red",
+                            "borderColor": "rgba(121, 116, 126, 1)",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flex": undefined,
+                            "flexDirection": "column",
+                            "shadowColor": "#000",
+                            "shadowOffset": {
+                              "height": 0,
+                              "width": 0,
+                            },
+                            "shadowOpacity": 0,
+                            "shadowRadius": 0,
+                          }
+                        }
+                        testID="chip-container"
+                      >
+                        <View
+                          accessibilityRole="button"
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": true,
+                              "expanded": undefined,
+                              "selected": false,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={true}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          style={
+                            [
+                              {
+                                "overflow": "hidden",
+                              },
+                              [
+                                {
+                                  "borderRadius": 8,
+                                },
+                                {
+                                  "width": "100%",
+                                },
+                              ],
+                            ]
+                          }
+                          testID="chip"
+                        >
+                          <View
+                            style={
+                              [
+                                {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "paddingLeft": 4,
+                                  "position": "relative",
+                                },
+                                {
+                                  "paddingLeft": 0,
+                                },
+                                {
+                                  "paddingRight": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignSelf": "center",
+                                    "padding": 4,
+                                  },
+                                  {
+                                    "paddingLeft": 8,
+                                    "paddingRight": 0,
+                                  },
+                                  null,
+                                ]
+                              }
+                            >
+                              <Text
+                                accessibilityElementsHidden={true}
+                                importantForAccessibility="no-hide-descendants"
+                                pointerEvents="none"
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "backgroundColor": "transparent",
+                                    },
+                                    {
+                                      "color": "rgba(103, 80, 164, 1)",
+                                      "fontSize": 18,
+                                    },
+                                  ]
+                                }
+                              >
+                                □
+                              </Text>
+                            </View>
+                            <Text
+                              numberOfLines={1}
+                              selectable={false}
+                              style={
+                                [
+                                  {
+                                    "textAlign": "left",
+                                  },
+                                  {
+                                    "color": "rgba(28, 27, 31, 1)",
+                                    "writingDirection": "ltr",
+                                  },
+                                  [
+                                    {
+                                      "fontFamily": "System",
+                                      "fontSize": 14,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.1,
+                                      "lineHeight": 20,
+                                    },
+                                    [
+                                      {
+                                        "marginVertical": 6,
+                                        "textAlignVertical": "center",
+                                      },
+                                      {
+                                        "color": "rgba(29, 25, 43, 1)",
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      {
+                                        "marginLeft": 8,
+                                        "marginRight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ],
+                                ]
+                              }
+                            >
+                              LOSS
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "marginTop": 13.34,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Stock Price at Bet:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        ₹
+                        1525.00
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Net Profit:
+                      </Text>
+                      <Text
+                        style={
+                          [
+                            {
+                              "fontSize": 30.595932917809698,
+                              "fontWeight": "500",
+                            },
+                            {
+                              "color": "#F44336",
+                            },
+                          ]
+                        }
+                      >
+                        ₹
+                        800
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Bet Time:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        2024-02-14 11:15:22
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "rgb(255, 251, 255)",
+              "borderRadius": 12,
+              "marginBottom": 26.68,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.15,
+              "shadowRadius": 3,
+            }
+          }
+          testID="card-container-outer-layer"
+        >
+          <View
+            collapsable={false}
+            style={
+              {
+                "backgroundColor": "rgb(255, 251, 255)",
+                "borderRadius": 12,
+                "elevation": 3,
+                "flex": undefined,
+                "shadowColor": "#000",
+                "shadowOffset": {
+                  "height": 1,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 1,
+              }
+            }
+            testID="card-container"
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexShrink": 1,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="card"
+              >
+                <View
+                  borderRadiusStyles={{}}
+                  index={0}
+                  siblings={
+                    [
+                      "View",
+                    ]
+                  }
+                  style={
+                    {
+                      "padding": 15,
+                    }
+                  }
+                  total={1}
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginBottom": 20.009999999999998,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "fontSize": 33.65552620959067,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      Reliance Industries
+                    </Text>
+                    <View
+                      collapsable={false}
+                      style={
+                        {
+                          "backgroundColor": "green",
+                          "borderRadius": 8,
+                          "shadowColor": "#000",
+                          "shadowOffset": {
+                            "height": 0,
+                            "width": 0,
+                          },
+                          "shadowOpacity": 0,
+                          "shadowRadius": 0,
+                        }
+                      }
+                      testID="chip-container-outer-layer"
+                    >
+                      <View
+                        collapsable={false}
+                        style={
+                          {
+                            "backgroundColor": "green",
+                            "borderColor": "rgba(121, 116, 126, 1)",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flex": undefined,
+                            "flexDirection": "column",
+                            "shadowColor": "#000",
+                            "shadowOffset": {
+                              "height": 0,
+                              "width": 0,
+                            },
+                            "shadowOpacity": 0,
+                            "shadowRadius": 0,
+                          }
+                        }
+                        testID="chip-container"
+                      >
+                        <View
+                          accessibilityRole="button"
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": true,
+                              "expanded": undefined,
+                              "selected": false,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={true}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          style={
+                            [
+                              {
+                                "overflow": "hidden",
+                              },
+                              [
+                                {
+                                  "borderRadius": 8,
+                                },
+                                {
+                                  "width": "100%",
+                                },
+                              ],
+                            ]
+                          }
+                          testID="chip"
+                        >
+                          <View
+                            style={
+                              [
+                                {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "paddingLeft": 4,
+                                  "position": "relative",
+                                },
+                                {
+                                  "paddingLeft": 0,
+                                },
+                                {
+                                  "paddingRight": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignSelf": "center",
+                                    "padding": 4,
+                                  },
+                                  {
+                                    "paddingLeft": 8,
+                                    "paddingRight": 0,
+                                  },
+                                  null,
+                                ]
+                              }
+                            >
+                              <Text
+                                accessibilityElementsHidden={true}
+                                importantForAccessibility="no-hide-descendants"
+                                pointerEvents="none"
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "backgroundColor": "transparent",
+                                    },
+                                    {
+                                      "color": "rgba(103, 80, 164, 1)",
+                                      "fontSize": 18,
+                                    },
+                                  ]
+                                }
+                              >
+                                □
+                              </Text>
+                            </View>
+                            <Text
+                              numberOfLines={1}
+                              selectable={false}
+                              style={
+                                [
+                                  {
+                                    "textAlign": "left",
+                                  },
+                                  {
+                                    "color": "rgba(28, 27, 31, 1)",
+                                    "writingDirection": "ltr",
+                                  },
+                                  [
+                                    {
+                                      "fontFamily": "System",
+                                      "fontSize": 14,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.1,
+                                      "lineHeight": 20,
+                                    },
+                                    [
+                                      {
+                                        "marginVertical": 6,
+                                        "textAlignVertical": "center",
+                                      },
+                                      {
+                                        "color": "rgba(29, 25, 43, 1)",
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      {
+                                        "marginLeft": 8,
+                                        "marginRight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ],
+                                ]
+                              }
+                            >
+                              WIN
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "marginTop": 13.34,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Stock Price at Bet:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        ₹
+                        2350.00
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Net Profit:
+                      </Text>
+                      <Text
+                        style={
+                          [
+                            {
+                              "fontSize": 30.595932917809698,
+                              "fontWeight": "500",
+                            },
+                            {
+                              "color": "#4CAF50",
+                            },
+                          ]
+                        }
+                      >
+                        ₹
+                        2,400
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Bet Time:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        2024-02-15 14:30:45
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "rgb(255, 251, 255)",
+              "borderRadius": 12,
+              "marginBottom": 26.68,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.15,
+              "shadowRadius": 3,
+            }
+          }
+          testID="card-container-outer-layer"
+        >
+          <View
+            collapsable={false}
+            style={
+              {
+                "backgroundColor": "rgb(255, 251, 255)",
+                "borderRadius": 12,
+                "elevation": 3,
+                "flex": undefined,
+                "shadowColor": "#000",
+                "shadowOffset": {
+                  "height": 1,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 1,
+              }
+            }
+            testID="card-container"
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexShrink": 1,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="card"
+              >
+                <View
+                  borderRadiusStyles={{}}
+                  index={0}
+                  siblings={
+                    [
+                      "View",
+                    ]
+                  }
+                  style={
+                    {
+                      "padding": 15,
+                    }
+                  }
+                  total={1}
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "marginBottom": 20.009999999999998,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "fontSize": 33.65552620959067,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      HDFC Bank
+                    </Text>
+                    <View
+                      collapsable={false}
+                      style={
+                        {
+                          "backgroundColor": "red",
+                          "borderRadius": 8,
+                          "shadowColor": "#000",
+                          "shadowOffset": {
+                            "height": 0,
+                            "width": 0,
+                          },
+                          "shadowOpacity": 0,
+                          "shadowRadius": 0,
+                        }
+                      }
+                      testID="chip-container-outer-layer"
+                    >
+                      <View
+                        collapsable={false}
+                        style={
+                          {
+                            "backgroundColor": "red",
+                            "borderColor": "rgba(121, 116, 126, 1)",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flex": undefined,
+                            "flexDirection": "column",
+                            "shadowColor": "#000",
+                            "shadowOffset": {
+                              "height": 0,
+                              "width": 0,
+                            },
+                            "shadowOpacity": 0,
+                            "shadowRadius": 0,
+                          }
+                        }
+                        testID="chip-container"
+                      >
+                        <View
+                          accessibilityRole="button"
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": true,
+                              "expanded": undefined,
+                              "selected": false,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={true}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          style={
+                            [
+                              {
+                                "overflow": "hidden",
+                              },
+                              [
+                                {
+                                  "borderRadius": 8,
+                                },
+                                {
+                                  "width": "100%",
+                                },
+                              ],
+                            ]
+                          }
+                          testID="chip"
+                        >
+                          <View
+                            style={
+                              [
+                                {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "paddingLeft": 4,
+                                  "position": "relative",
+                                },
+                                {
+                                  "paddingLeft": 0,
+                                },
+                                {
+                                  "paddingRight": 0,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignSelf": "center",
+                                    "padding": 4,
+                                  },
+                                  {
+                                    "paddingLeft": 8,
+                                    "paddingRight": 0,
+                                  },
+                                  null,
+                                ]
+                              }
+                            >
+                              <Text
+                                accessibilityElementsHidden={true}
+                                importantForAccessibility="no-hide-descendants"
+                                pointerEvents="none"
+                                selectable={false}
+                                style={
+                                  [
+                                    {
+                                      "backgroundColor": "transparent",
+                                    },
+                                    {
+                                      "color": "rgba(103, 80, 164, 1)",
+                                      "fontSize": 18,
+                                    },
+                                  ]
+                                }
+                              >
+                                □
+                              </Text>
+                            </View>
+                            <Text
+                              numberOfLines={1}
+                              selectable={false}
+                              style={
+                                [
+                                  {
+                                    "textAlign": "left",
+                                  },
+                                  {
+                                    "color": "rgba(28, 27, 31, 1)",
+                                    "writingDirection": "ltr",
+                                  },
+                                  [
+                                    {
+                                      "fontFamily": "System",
+                                      "fontSize": 14,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.1,
+                                      "lineHeight": 20,
+                                    },
+                                    [
+                                      {
+                                        "marginVertical": 6,
+                                        "textAlignVertical": "center",
+                                      },
+                                      {
+                                        "color": "rgba(29, 25, 43, 1)",
+                                        "fontFamily": "System",
+                                        "fontSize": 14,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.1,
+                                        "lineHeight": 20,
+                                      },
+                                      {
+                                        "marginLeft": 8,
+                                        "marginRight": 16,
+                                      },
+                                      undefined,
+                                    ],
+                                  ],
+                                ]
+                              }
+                            >
+                              LOSS
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "marginTop": 13.34,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Stock Price at Bet:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        ₹
+                        1525.00
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Net Profit:
+                      </Text>
+                      <Text
+                        style={
+                          [
+                            {
+                              "fontSize": 30.595932917809698,
+                              "fontWeight": "500",
+                            },
+                            {
+                              "color": "#F44336",
+                            },
+                          ]
+                        }
+                      >
+                        ₹
+                        800
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "marginBottom": 6.67,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#666",
+                            "fontSize": 27.53633962602873,
+                          }
+                        }
+                      >
+                        Bet Time:
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontSize": 30.595932917809698,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        2024-02-14 11:15:22
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;

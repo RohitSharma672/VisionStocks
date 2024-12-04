@@ -1,11 +1,8 @@
 import React from 'react';
-import { View, Text, FlatList, StyleSheet, SafeAreaView } from 'react-native';
+import { View, Text, FlatList, StyleSheet, SafeAreaView, Button } from 'react-native';
 import { Card, Chip, ActivityIndicator, IconButton } from 'react-native-paper';
 import { fp, hp, wp } from '../../utility/dimensions';
 import { useNavigation } from '@react-navigation/native';
-import { typography } from '../../assets/fonts/typography';
-
-// Enhanced dummy data for stock betting history
 const dummyBettingHistory = [
     {
       id: '1',
@@ -15,7 +12,7 @@ const dummyBettingHistory = [
       currentStockPrice: 2350,
       selectedRange: {
         min: -3,
-        max: 5
+        max: 4
       },
       targetPriceRange: {
         lower: 2278,
@@ -25,7 +22,7 @@ const dummyBettingHistory = [
       betTimestamp: '2024-02-15 14:30:45',
       actualMovement: 4,
       points: 75,
-      netProfit: 2400
+      netProfit: 2300
     },
     {
       id: '2',
@@ -189,10 +186,7 @@ const dummyBettingHistory = [
   ];
 
 const StockBettingHistoryScreen = () => {
-
-
     const navigation = useNavigation();
-  // Function to get status chip color and icon
   const getStatusStyle = (status) => {
     switch(status) {
       case 'win':
@@ -217,7 +211,6 @@ const StockBettingHistoryScreen = () => {
     }
   };
 
-  // Render individual betting history item
   const renderBetItem = ({ item }) => {
     const statusStyle = getStatusStyle(item.status);
 
@@ -269,15 +262,20 @@ const StockBettingHistoryScreen = () => {
       </Card>
     );
   };
+const onPressButton = (()=>{
+  navigation.navigate('BetDetailScreen', { betDetails: "item" });
+})
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
         <Text style={styles.headerTitle}>Betting History</Text>
+        <Button title="Click Me" onPress={onPressButton} />
+
         <IconButton 
           icon="filter" 
           size={24} 
-          onPress={() => {/* Add filter functionality */}}
+          onPress={() => {}}
         />
       </View>
       

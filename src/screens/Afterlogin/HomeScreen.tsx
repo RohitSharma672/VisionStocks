@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   View,
   StyleSheet,
@@ -11,11 +11,14 @@ import {
   Surface,
   TouchableRipple,
   IconButton,
+  ActivityIndicator,
+  useTheme,
 } from 'react-native-paper';
-import { LineChart } from 'react-native-chart-kit';
-import { fp, hp, wp } from '../../utility/dimensions';
+import {LineChart} from 'react-native-chart-kit';
+import {fp, hp, wp} from '../../utility/dimensions';
 import FetchDataHooks from '../../common/customhooks';
-import { useFeatureAlert } from '../../common/AlertHooks';
+import {useFeatureAlert} from '../../common/AlertHooks';
+import AnimatedInstructionText from '../../common/AnimatedInstructionText';
 
 interface PopulationData {
   Year: number;
@@ -31,10 +34,11 @@ interface ChartData {
 }
 
 const USPopulationInsights: React.FC = () => {
-  const { populationData, loading, error } = FetchDataHooks();
+  const {populationData, loading, error} = FetchDataHooks();
   const [selectedYear, setSelectedYear] = useState<PopulationData | null>(null);
   const [chartData, setChartData] = useState<ChartData | null>(null);
   const showFeatureAlert = useFeatureAlert();
+  const theme = useTheme();
 
   const handleFeaturePress = () => {
     showFeatureAlert();
@@ -42,12 +46,14 @@ const USPopulationInsights: React.FC = () => {
 
   useEffect(() => {
     if (populationData && populationData.data) {
-      const sortedData = populationData.data.sort((a: PopulationData, b: PopulationData) => a.Year - b.Year);
+      const sortedData = populationData.data.sort(
+        (a: PopulationData, b: PopulationData) => a.Year - b.Year,
+      );
       const processedChartData: ChartData = {
-        labels: sortedData.map((item: { Year: any; }) => item.Year),
+        labels: sortedData.map((item: {Year: any}) => item.Year),
         datasets: [
           {
-            data: sortedData.map((item: { Population: any; }) => item.Population),
+            data: sortedData.map((item: {Population: any}) => item.Population),
             color: (opacity = 1) => `rgba(0, 255, 0, ${opacity})`,
           },
         ],
@@ -59,11 +65,18 @@ const USPopulationInsights: React.FC = () => {
   }, [populationData]);
 
   const handleYearSelect = (year: number) => {
-    const selectedYearData = populationData.data.find((item: PopulationData) => item.Year === year);
+    const selectedYearData = populationData.data.find(
+      (item: PopulationData) => item.Year === year,
+    );
     setSelectedYear(selectedYearData || null);
   };
 
   const renderContent = () => {
+    if (loading)
+      return (
+        <ActivityIndicator animating={true} size="large" color={'#00FF00'} />
+      );
+
     if (loading) return <Text style={styles.loadingText}>Loading...</Text>;
     if (error) return <Text style={styles.errorText}>Error loading data</Text>;
     if (!chartData || !selectedYear) return null;
@@ -71,12 +84,14 @@ const USPopulationInsights: React.FC = () => {
     return (
       <View style={styles.content}>
         <Text style={styles.title}>US Population Insights</Text>
-        <Text style={styles.population}>{selectedYear?.Population.toLocaleString()}</Text>
+        <Text style={styles.population}>
+          {selectedYear?.Population.toLocaleString()}
+        </Text>
         <Text style={styles.growth}>
           +20,879,99 <Text style={styles.percentage}>(56%)</Text>{' '}
-          <Text style={{ color: 'lightgray' }}>since 17 Jun 2019</Text>
+          <Text style={{color: 'lightgray'}}>since 17 Jun 2019</Text>
         </Text>
-        <View style={{ left: wp(2) }}>
+        <View style={{left: wp(2)}}>
           <LineChart
             data={chartData}
             width={wp(95)}
@@ -101,29 +116,27 @@ const USPopulationInsights: React.FC = () => {
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.scrollViewContent}
-          >
-            {chartData.labels.map((year) => (
+            contentContainerStyle={styles.scrollViewContent}>
+            {chartData.labels.map(year => (
               <TouchableRipple
                 key={year}
                 onPress={() => handleYearSelect(year)}
                 style={[
                   styles.yearSelector,
                   selectedYear.Year === year && styles.selectedYear,
-                ]}
-              >
+                ]}>
                 <Text
                   style={[
                     styles.yearSelectorText,
                     selectedYear.Year === year && styles.yearSelectorText1,
-                  ]}
-                >
+                  ]}>
                   {year}
                 </Text>
               </TouchableRipple>
             ))}
           </ScrollView>
         </View>
+        <AnimatedInstructionText />
         <View>
           <Text style={styles.statValue1}>Key Statistics</Text>
         </View>
@@ -159,7 +172,7 @@ const USPopulationInsights: React.FC = () => {
             size={fp(3.5)}
             onPress={handleFeaturePress}
           />
-          <View >
+          <View>
             <IconButton
               icon="close"
               iconColor="white"
@@ -210,11 +223,10 @@ const styles = StyleSheet.create({
   percentage: {
     color: '#00FF00',
   },
-  chart: {
-  },
+  chart: {},
   statisticsContainer: {
     flexDirection: 'row',
-    justifyContent: "center",
+    justifyContent: 'center',
     marginTop: hp(2),
   },
   statCard: {
@@ -229,28 +241,28 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: fp(2.1),
     fontWeight: '500',
-    textAlign: "center",
-    justifyContent: "center"
+    textAlign: 'center',
+    justifyContent: 'center',
   },
   statValue1: {
     color: '#fff',
     fontSize: fp(2.1),
     fontWeight: '700',
-    marginTop: hp(3)
+    marginTop: hp(3),
   },
   statLabel: {
     color: '#fff',
     fontSize: fp(2.2),
     marginTop: 4,
-    textAlign: "center",
-    justifyContent: "center"
+    textAlign: 'center',
+    justifyContent: 'center',
   },
   statPercentage: {
     color: '#00FF00',
     fontSize: fp(1.8),
     marginTop: 4,
-    textAlign: "center",
-    justifyContent: "center"
+    textAlign: 'center',
+    justifyContent: 'center',
   },
   yearSelectorContainer: {
     flexDirection: 'row',
@@ -260,7 +272,7 @@ const styles = StyleSheet.create({
   },
   scrollViewContent: {
     flexDirection: 'row',
-    alignItems: 'center', 
+    alignItems: 'center',
   },
   yearSelector: {
     backgroundColor: '#121212',
@@ -270,8 +282,8 @@ const styles = StyleSheet.create({
   selectedYear: {
     backgroundColor: 'black',
     borderRadius: wp(3),
-    borderColor: "white",
-    borderWidth: 1
+    borderColor: 'white',
+    borderWidth: 1,
   },
   yearSelectorText: {
     color: 'gray',

@@ -1,20 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import {
-  View,
-  StyleSheet,
-  ScrollView,
-  SafeAreaView
-} from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {View, StyleSheet, ScrollView, SafeAreaView} from 'react-native';
 import {
   Text,
   Surface,
   TouchableRipple,
   IconButton,
+  ActivityIndicator,
+  useTheme,
 } from 'react-native-paper';
-import { LineChart } from 'react-native-chart-kit';
-import { fp, hp, wp } from '../../utility/dimensions';
+import {LineChart} from 'react-native-chart-kit';
+import {fp, hp, wp} from '../../utility/dimensions';
 import FetchDataHooks from '../../common/customhooks';
-import { useFeatureAlert } from '../../common/AlertHooks';
+import {useFeatureAlert} from '../../common/AlertHooks';
+import AnimatedInstructionText from '../../common/AnimatedInstructionText';
 
 interface PopulationData {
   Year: number;
@@ -30,10 +28,11 @@ interface ChartData {
 }
 
 const NewsScreen: React.FC = () => {
-  const { populationData, loading, error } = FetchDataHooks();
+  const {populationData, loading, error} = FetchDataHooks();
   const [selectedYear, setSelectedYear] = useState<PopulationData | null>(null);
   const [chartData, setChartData] = useState<ChartData | null>(null);
   const showFeatureAlert = useFeatureAlert();
+  const theme = useTheme();
 
   const handleFeaturePress = () => {
     showFeatureAlert();
@@ -41,12 +40,16 @@ const NewsScreen: React.FC = () => {
 
   useEffect(() => {
     if (populationData?.data) {
-      const sortedData = populationData.data.sort((a: PopulationData, b: PopulationData) => a.Year - b.Year);
+      const sortedData = populationData.data.sort(
+        (a: PopulationData, b: PopulationData) => a.Year - b.Year,
+      );
       const processedChartData: ChartData = {
-        labels: sortedData.map((item: { Year: { toString: () => any; }; }) => item.Year.toString()),
+        labels: sortedData.map((item: {Year: {toString: () => any}}) =>
+          item.Year.toString(),
+        ),
         datasets: [
           {
-            data: sortedData.map((item: { Population: any; }) => item.Population),
+            data: sortedData.map((item: {Population: any}) => item.Population),
             color: (opacity = 1) => `rgba(0, 255, 0, ${opacity})`,
           },
         ],
@@ -58,11 +61,17 @@ const NewsScreen: React.FC = () => {
   }, [populationData]);
 
   const handleYearSelect = (year: number) => {
-    const selectedYearData = populationData && populationData.data.find((item: PopulationData) => item.Year === year);
+    const selectedYearData =
+      populationData &&
+      populationData.data.find((item: PopulationData) => item.Year === year);
     setSelectedYear(selectedYearData || null);
   };
 
   const renderContent = () => {
+    if (loading)
+      return (
+        <ActivityIndicator animating={true} size="large" color={'#00FF00'} />
+      );
     if (loading) return <Text style={styles.loadingText}>Loading...</Text>;
     if (error) return <Text style={styles.errorText}>Error loading data</Text>;
     if (!chartData || !selectedYear) return null;
@@ -70,7 +79,7 @@ const NewsScreen: React.FC = () => {
     return (
       <View style={styles.content}>
         <Text style={styles.title}>Population Trends</Text>
-        <View style={{ left: wp(2) }}>
+        <View style={{left: wp(2)}}>
           <LineChart
             data={chartData}
             width={wp(95)}
@@ -95,55 +104,63 @@ const NewsScreen: React.FC = () => {
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.scrollViewContent}
-          >
-            {chartData.labels.map((year) => (
+            contentContainerStyle={styles.scrollViewContent}>
+            {chartData.labels.map(year => (
               <TouchableRipple
                 key={year}
                 style={[
                   styles.yearSelector,
                   selectedYear.Year.toString() === year && styles.selectedYear,
                 ]}
-                onPress={() => handleYearSelect(year)}
-              >
+                onPress={() => handleYearSelect(year)}>
                 <Text
                   style={[
                     styles.yearSelectorText,
-                    selectedYear.Year.toString() === year && styles.yearSelectorText1,
-                  ]}
-                >
+                    selectedYear.Year.toString() === year &&
+                      styles.yearSelectorText1,
+                  ]}>
                   {year}
                 </Text>
               </TouchableRipple>
             ))}
           </ScrollView>
         </View>
+        <View style={{marginTop: -hp(2)}}>
+          <AnimatedInstructionText />
+        </View>
+
         <Surface style={styles.cardSubSectionModified}>
           <View style={styles.cardLeftContent}>
             <Text style={styles.cardTitle}>Total Growth</Text>
             <Text style={styles.cardYearText}>{selectedYear.Year}</Text>
           </View>
-          <Text style={styles.cardValue}>{selectedYear.Population.toLocaleString()}</Text>
+          <Text style={styles.cardValue}>
+            {selectedYear.Population.toLocaleString()}
+          </Text>
         </Surface>
         <Surface style={styles.cardSubSection}>
           <Text style={styles.subTitle}>Recent Growth Rate</Text>
           <View style={styles.growthRateContainer}>
             <Text style={styles.growthRate}>
-              2024-2023:&nbsp;&nbsp; <Text style={{ color: '#00FF00' }}>0.41%</Text>
+              2024-2023:&nbsp;&nbsp;{' '}
+              <Text style={{color: '#00FF00'}}>0.41%</Text>
             </Text>
             <Text style={styles.growthRate}>
-              2023-2022:&nbsp;&nbsp; <Text style={{ color: '#00FF00' }}>5.41%</Text>
+              2023-2022:&nbsp;&nbsp;{' '}
+              <Text style={{color: '#00FF00'}}>5.41%</Text>
             </Text>
             <Text style={styles.growthRate}>
-              2022-2021:&nbsp;&nbsp; <Text style={{ color: '#00FF00' }}>2.41%</Text>
+              2022-2021:&nbsp;&nbsp;{' '}
+              <Text style={{color: '#00FF00'}}>2.41%</Text>
             </Text>
             <Text style={styles.growthRate}>
-              2021-2020:&nbsp;&nbsp; <Text style={{ color: '#00FF00' }}>6.41%</Text>
+              2021-2020:&nbsp;&nbsp;{' '}
+              <Text style={{color: '#00FF00'}}>6.41%</Text>
             </Text>
             <Text style={styles.growthRate}>
-              2020-2019:&nbsp;&nbsp; <Text style={{ color: '#00FF00' }}>3.41%</Text>
+              2020-2019:&nbsp;&nbsp;{' '}
+              <Text style={{color: '#00FF00'}}>3.41%</Text>
             </Text>
-         
           </View>
         </Surface>
       </View>
@@ -166,7 +183,7 @@ const NewsScreen: React.FC = () => {
             size={fp(3.5)}
             onPress={handleFeaturePress}
           />
-          <View >
+          <View>
             <IconButton
               icon="close"
               iconColor="white"

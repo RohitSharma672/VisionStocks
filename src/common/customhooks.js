@@ -8,6 +8,8 @@ const FetchDataHooks = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
+
       try {
         const response = await axios.get('https://datausa.io/api/data?drilldowns=Nation&measures=Population');
         setPopulationData(response.data);

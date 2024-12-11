@@ -1,4 +1,7 @@
 {
   "name": "VisionStocks",
-  "displayName": "VisionStocks"
+  "displayName": "VisionStocks",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-9368889927211222~2520075953"
+  }
 }
